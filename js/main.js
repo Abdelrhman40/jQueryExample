@@ -65,3 +65,18 @@ $(".icon").click(function () {
     let currentPostion = $(".menu").outerWidth(true);
     $(".outerBox").animate({left:`-${currentPostion}`},1000) 
 })
+
+
+$(window).scroll(function () {
+    let scrollTop = $(window).scrollTop();
+    let detailsTop = $("#details").offset().top;
+    if (scrollTop > detailsTop) {
+        $(".top-icon").fadeIn(500)
+    } else {
+        $(".top-icon").fadeOut(500) 
+    }
+})
+
+ $(".top-icon").click(function(){
+    $('html , body').animate({scrollTop : 0} , {queue:false, duration:500})
+ })

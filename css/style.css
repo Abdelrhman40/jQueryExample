@@ -123,3 +123,15 @@ section .parent {
     background-color: #D62E33;
     border: 1px solid #D62E33;   
 }
+
+.top-icon{
+    color: #414658;
+    font-size: 1.5rem;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    z-index: 1111;
+    position: fixed;
+    display: none;
+    cursor: pointer;
+}
